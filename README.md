@@ -1,12 +1,3 @@
-## Quick Start (Local Build)
-bash
-sudo apt-get update
-sudo apt-get install -y live-build debootstrap squashfs-tools xorriso syslinux-utils isolinux genisoimage ca-certificates
-git clone https://github.com/nickjaimes/sg-quantum-os.git
-cd sg-quantum-os
-sudo bash scripts/build.sh
-bash scripts/verify.sh dist/SGQOS-bookworm-amd64.iso dist/SGQOS-bookworm-amd64.sha256
-
 # SG QUANTUM OS v3.0 (Preview)
 **Run Anywhere. Think Everywhere. Protect Always.**  
 **Feel Everything. Learn Continuously. Evolve Together.**
