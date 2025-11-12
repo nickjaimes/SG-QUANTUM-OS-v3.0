@@ -82,3 +82,14 @@ Contributing
 
 We use Controlled Merge Requests (CMR): fork → feature branch → PR → guardian review.
 Please read CONTRIBUTING.md 
+
+---
+
+### 🛡️ SG GUARDIAN CERTIFIED CONTRIBUTOR
+[![Guardian Certification](https://img.shields.io/badge/Guardian-Certified-Gold?style=for-the-badge&logo=shield&color=gold)](https://github.com/nickjaimes/sg-quantum-os/wiki/Guardian-Certification)
+
+> “I am a Guardian. I build with wisdom and protection in mind.  
+> My code shall never harm; my system shall always guide.”  
+> — Guardian Oath 2025
+
+---
