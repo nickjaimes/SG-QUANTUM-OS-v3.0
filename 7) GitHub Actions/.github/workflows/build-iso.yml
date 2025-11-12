@@ -1,0 +1,50 @@
+name: Build ISO
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "main" ]
+    tags: [ "v*" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            live-build debootstrap squashfs-tools xorriso syslinux-utils \
+            isolinux genisoimage ca-certificates
+
+      - name: Build ISO
+        run: bash scripts/build.sh
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: sgqos-iso
+          path: |
+            dist/SGQOS-bookworm-amd64.iso
+            dist/SGQOS-bookworm-amd64.sha256
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/')
+    needs: build
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: sgqos-iso
+          path: dist
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/SGQOS-bookworm-amd64.iso
+            dist/SGQOS-bookworm-amd64.sha256
+          draft: false
+          prerelease: false
