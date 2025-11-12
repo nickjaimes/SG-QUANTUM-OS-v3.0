@@ -1,0 +1,11 @@
+[Unit]
+Description=SG TRINITY Core (ethics/maintenance/security)
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/sg-trinity --mode=guardian
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
