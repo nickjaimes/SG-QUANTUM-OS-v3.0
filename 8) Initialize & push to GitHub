@@ -1,0 +1,11 @@
+mkdir sg-quantum-os && cd sg-quantum-os
+# (Create files as above)
+git init
+git add -A
+git commit -m "chore: bootstrap SG QUANTUM OS v3.0 repo (5EF + TRINITY/EAGLE EYE)"
+git branch -M main
+git remote add origin https://github.com/<your-user>/sg-quantum-os.git
+git push -u origin main
+# Tag a release build:
+git tag v3.0.0-preview
+git push origin v3.0.0-preview
