@@ -13,7 +13,7 @@ bash scripts/verify.sh dist/SGQOS-bookworm-amd64.iso dist/SGQOS-bookworm-amd64.s
 
 SG QUANTUM OS (SGQOS) is a fusion-intelligence operating system powered by:
 - **AFA (Atomic Fusion Algorithm)** – creates intelligence (data/model fusion)
-- **BoA (Booster of Algorithms)** – amplifies intelligence (optimization)
+- **BoA (Booster Fusion Algorithm)** – amplifies intelligence (optimization)
 - **TRINITY Core** – Maintenance • Optimization • Security (ethical governance)
 - **EAGLE EYE** – global situational awareness & telemetry
 - **5 Elemental Framework (5EF)** – Fire • Water • Wind • Earth • Ether (balance)
