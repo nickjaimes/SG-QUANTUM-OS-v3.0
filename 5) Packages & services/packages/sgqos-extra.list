@@ -1,0 +1,3 @@
+# Extend here as your OS grows
+jq
+ca-certificates
