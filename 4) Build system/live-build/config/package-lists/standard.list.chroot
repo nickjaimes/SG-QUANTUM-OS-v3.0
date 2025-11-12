@@ -1,0 +1,11 @@
+# Base userland
+vim
+git
+curl
+wget
+htop
+python3
+pip
+# SGQOS tools (placeholder)
+net-tools
+tmux
