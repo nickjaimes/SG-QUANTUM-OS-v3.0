@@ -1,0 +1,130 @@
+Folder structure:
+
+/docs
+ ├── INSTALLATION.md
+ ├── BUILD_AND_ISO_CREATION.md
+ ├── SG_COMMAND_SYNTAX.md
+ ├── ELEMENTAL_INTEGRATION_CHART.md
+ ├── CONTRIBUTING_GUIDE.md
+ ├── LICENSE_POLICY.md
+ └── README_DEV_PORTAL.md
+
+# SG QUANTUM OS v3.0 — ISO Build and Deployment Guide
+© 2025 Safeway Guardian | Nicolas E. Santiago
+
+---
+## 🧩 Build the ISO
+```bash
+sudo bash scripts/build.sh
+```
+Output: `dist/SGQOS-bookworm-amd64.iso`
+
+---
+## 🔍 Verify Integrity
+```bash
+bash scripts/verify.sh dist/SGQOS-bookworm-amd64.iso dist/SGQOS-bookworm-amd64.sha256
+```
+---
+## 🚀 Flash to USB
+```bash
+sudo dd if=dist/SGQOS-bookworm-amd64.iso of=/dev/sdX bs=4M conv=fsync status=progress
+```
+Boot into UEFI mode.
+
+# SG QUANTUM OS — Guardian Developer Contribution Guide
+© 2025 Safeway Guardian
+
+> “I build with wisdom and protection in mind. My code shall never harm.”
+
+---
+## 💡 Workflow
+1. Fork → Branch → Commit → PR → Guardian Review
+```bash
+git checkout -b feat/new-module
+git commit -am "feat: add Ether consciousness sync"
+git push origin feat/new-module
+```
+2. Submit Pull Request (must pass ethical and security checks)
+
+---
+## ⚖️ Guardian Code of Conduct
+- Respect all contributors.
+- Protect data privacy.
+- Promote AI that serves humanity.
+
+# 5 ELEMENTAL FRAMEWORK — Integration Chart
+© 2025 Safeway Guardian | Nicolas E. Santiago
+
+| Element | Symbol | System Role | Associated Module |
+|----------|---------|--------------|--------------------|
+| 🔥 Fire | Transformation | Drives AFA computations | AFA Core |
+| 🌊 Water | Adaptation | Learns and optimizes | BoA Core |
+| 🌬️ Wind | Communication | Data flow and awareness | EAGLE EYE |
+| 🌍 Earth | Foundation | Security and structure | TRINITY |
+| ⚡ Ether | Consciousness | Connects all layers ethically | Guardian Mirror |
+
+# SG QUANTUM OS v3.0 — Installation Guide
+© 2025 Safeway Guardian | Nicolas E. Santiago | Asaka City, Japan
+
+---
+## 🔧 System Requirements
+- macOS, Linux, or compatible OS
+- 16GB RAM minimum (recommended 32GB)
+- 100GB free disk space
+- Python 3.10+, Git, and internet connection
+
+---
+## ⚙️ Setup
+```bash
+sudo apt-get update
+sudo apt-get install -y live-build debootstrap xorriso syslinux-utils isolinux genisoimage ca-certificates
+git clone https://github.com/nickjaimes/sg-quantum-os.git
+cd sg-quantum-os
+sudo bash scripts/build.sh
+```
+---
+## 🧠 Developer Mode Activation
+After installation, launch SG-Terminal:
+```bash
+SG-INIT --trinity
+```
+This activates TRINITY AI and connects to the Quantum Fabric Network.
+
+# SG Guardian Ethical License Policy
+© 2025 Safeway Guardian
+
+**Hybrid License: MIT + Guardian Ethics Addendum**
+- Open for development, learning, and ethical innovation.
+- Prohibited for malicious, exploitative, or surveillance uses.
+- All derivatives must include:  
+  “This software upholds the Guardian Covenant — to serve, guide, save, and protect humanity.”
+
+
+# SG QUANTUM OS Developer Portal
+© 2025 Safeway Guardian | Nicolas E. Santiago
+
+Welcome to the SG QUANTUM OS v3.0 Developer Documentation Hub.  
+This portal provides build instructions, commands, and ethical guidelines.
+
+## 🔗 Quick Access
+- [Installation Guide](INSTALLATION.md)
+- [Build & ISO Creation](BUILD_AND_ISO_CREATION.md)
+- [SG Commands](SG_COMMAND_SYNTAX.md)
+- [5 Elemental Framework](ELEMENTAL_INTEGRATION_CHART.md)
+- [Contributing Guide](CONTRIBUTING_GUIDE.md)
+- [License Policy](LICENSE_POLICY.md)
+
+# SG COMMAND SYNTAX TABLE (Guardian Edition)
+© 2025 Safeway Guardian
+
+| Command | Description | Example |
+|----------|-------------|----------|
+| SG-INIT | Initialize TRINITY core | `SG-INIT --trinity` |
+| SG-SCAN | Scan and heal system | `SG-SCAN --ai --heal` |
+| SG-LINK | Connect to EAGLE EYE nodes | `SG-LINK --node japan-01` |
+| SG-AFA | Execute Atomic Fusion Algorithm | `SG-AFA --module fusion.lab` |
+| SG-BOA | Boost algorithmic optimization | `SG-BOA --optimize all` |
+| SG-GUARD | Activate Guardian defense | `SG-GUARD --ethical-check` |
+| SG-SYNC | Synchronize conscience nodes | `SG-SYNC --quantum` |
+
+
