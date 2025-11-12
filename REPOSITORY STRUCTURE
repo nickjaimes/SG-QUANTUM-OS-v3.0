@@ -1,0 +1,40 @@
+sg-quantum-os/
+├─ .github/
+│  ├─ ISSUE_TEMPLATE/
+│  │  ├─ bug_report.yml
+│  │  └─ feature_request.yml
+│  ├─ workflows/
+│  │  └─ build-iso.yml
+│  └─ PULL_REQUEST_TEMPLATE.md
+├─ docs/
+│  ├─ ARCHITECTURE.md
+│  ├─ 5EF_INTEGRATION.md
+│  ├─ TRINITY.md
+│  ├─ EAGLE_EYE.md
+│  └─ ROADMAP.md
+├─ live-build/
+│  ├─ config.sh
+│  ├─ auto/
+│  │  ├─ config
+│  │  └─ clean
+│  └─ config/
+│     ├─ package-lists/
+│     │  └─ standard.list.chroot
+│     └─ includes.chroot/
+│        ├─ etc/issue
+│        └─ etc/motd
+├─ packages/
+│  └─ sgqos-extra.list
+├─ services/
+│  ├─ sg-trinity.service
+│  └─ sg-eagle-eye.service
+├─ scripts/
+│  ├─ build.sh
+│  └─ verify.sh
+├─ .gitignore
+├─ LICENSE
+├─ LICENSE_GUARDIAN_ADDENDUM.md
+├─ SECURITY.md
+├─ CONTRIBUTING.md
+├─ CODE_OF_CONDUCT.md
+└─ README.md
