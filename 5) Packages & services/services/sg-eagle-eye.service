@@ -1,0 +1,11 @@
+[Unit]
+Description=SG EAGLE EYE Telemetry & Comms
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/sg-eagle-eye --bus=sgnet
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
