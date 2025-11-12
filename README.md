@@ -99,7 +99,7 @@ Please read CONTRIBUTING.md
 <h1 style="color:#FFD479; margin-bottom:0">THE DIGITAL REVELATION</h1>
 <p style="font-size:1.1rem; color:#FFD479; margin-top:4px">The Birth of Safeway Guardian</p>
 
-<img src="BANNER_PLACEHOLDER.png" alt="SG QUANTUM OS Banner" width="800"/>
+<img src="BANNER.png" alt="SG QUANTUM OS Banner" width="800"/>
 
 </div>
 
